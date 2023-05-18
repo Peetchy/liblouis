@@ -1,0 +1,123 @@
+# liblouis: Thai Current Braille System.
+#
+#-index-name: Thai
+#-display-name: Thai current braille 8 Dots
+#
+#+language:th
+#+region:th-TH
+#+type:literary
+#+system:th-standard
+# Marked as "direction:forward" by thai braille funds
+# as tests only run forward.
+#+direction:forward
+#
+# Version 2023-06-01
+# Optimize the display of Braille.
+# Correct the punctuation of some mistakes.
+#
+# This file is part of liblouis.
+#
+# liblouis is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 2.1 of the
+# License, or (at your option) any later version.
+#
+# liblouis is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with liblouis. If not, see
+# <http://www.gnu.org/licenses/>.
+#
+include en-ueb-g1.ctb
+include braille-patterns.cti
+
+# Thai Consinants
+letter \x0e01 1245 # ก 
+letter \x0e02 13 # ข 
+letter \x0e03 1378 # ฃ 
+letter \x0e04 136 # ค 
+letter \x0e05 1368 # ฅ 
+letter \x0e06 1367 # ฆ 
+letter \x0e07 12456 # ง 
+letter \x0e08 245 # จ 
+letter \x0e09 34 # ฉ 
+letter \x0e0a 346 # ช 
+letter \x0e0b 2346 # ซ 
+letter \x0e0c 3467 # ฌ 
+letter \x0e0d 134567 # ญ 
+letter \x0e0e 1457 # ฎ 
+letter \x0e0f 12567 # ฏ 
+letter \x0e10 23457 # ฐ 
+letter \x0e11 234567 # ฑ 
+letter \x0e12 234568 # ฒ 
+letter \x0e13 13457 # ณ 
+letter \x0e14 145 # ด 
+letter \x0e15 1256 # ต 
+letter \x0e16 2345 # ถ 
+letter \x0e17 23456 # ท 
+letter \x0e18 2345678 # ธ 
+letter \x0e19 1345 # น 
+letter \x0e1a 1236 # บ 
+letter \x0e1b 12346 # ป 
+letter \x0e1c 1234 # ผ 
+letter \x0e1d 1346 # ฝ 
+letter \x0e1e 1456 # พ 
+letter \x0e1f 1246 # ฟ 
+letter \x0e20 14567 # ภ 
+letter \x0e21 134 # ม 
+letter \x0e22 13456 # ย 
+letter \x0e23 1235 # ร 
+letter \x0e25 123 # ล 
+letter \x0e27 2456 # ว 
+letter \x0e28 2347 # ศ 
+letter \x0e29 2348 # ษ 
+letter \x0e2a 234 # ส 
+letter \x0e2b 125 # ห 
+letter \x0e2c 1237 # ฬ 
+letter \x0e2d 135 # อ 
+letter \x0e2e 123456 # ฮ 
+
+# Thai vowel
+sign \x0e30 1 # ะ 
+sign \x0e31 345 # ั 
+sign \x0e47 3 # ็ 
+sign \x0e32 16 # า 
+sign \x0e34 12 # ิ 
+sign \x0e35 23 # ี 
+sign \x0e38 14 # ุ 
+sign \x0e39 25 # ู 
+sign \x0e36 246 # ึ 
+sign \x0e37 26 # ื 
+sign \x0e40 124 # เ 
+sign \x0e41 126 # แ 
+sign \x0e42 24 # โ 
+sign \x0e33 1356 # ำ 
+sign \x0e44 156 # ไ 
+sign \x0e43 156-2 # ใ 
+sign \x0e24 1235-2 # ฤ 
+sign \x0e26 123-2 # ฦ 
+sign \x0e48 35 # ่ 
+sign \x0e49 256 # ้ 
+sign \x0e4a 2356 # ๊ 
+sign \x0e4b 236 # ๋ 
+sign \x0e46 2 # ๆ 
+sign \x0e4c 356 # ์ 
+sign \x0e4d 5 # ํ 
+sign \x0e3a 3 # ฺ 
+sign \x0e2f 56-23 # ฯ 
+
+# Thai digit
+numsign 6-3456
+digit \x0e50 245 # ๐ 
+digit \x0e51 1 # ๑ 
+digit \x0e52 12 # ๒ 
+digit \x0e53 14 # ๓ 
+digit \x0e54 145 # ๔ 
+digit \x0e55 15 # ๕ 
+digit \x0e56 124 # ๖ 
+digit \x0e57 1245 # ๗ 
+digit \x0e58 125 # ๘ 
+digit \x0e59 24 # ๙ 
